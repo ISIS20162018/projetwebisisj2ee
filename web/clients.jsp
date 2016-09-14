@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         <script src="./assets/js/materialize.min.js"></script>
-        <script src="./assets/js/clients_function.js"></script>
+
         <title>Notre application Javascript - Clients</title>
     </head>
     <body>
@@ -41,7 +41,22 @@
         </ul>
 
         <div class="padding-300" id="container">
-            
+
+            <!-- On va essayer de lister en ajax !! -->
+            <div class='card'>
+                <div class='card-content'>
+                    <div class='card-title'>Listing des clients</div>
+                    <div>
+                        <div class='row'><div class='col s12'><a type='button' id='displayAllClients' class='btn btn-block waves-effect orange white-text bold'>Afficher les participants</a><a type='button' id='cleanClients' class='btn btn-block waves-effect red white-text bold'>Vider le tableau</a></div></div>
+                        <div class='row'>
+                            <div class='col s12'>
+                                <div class='ajaxResponse'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
@@ -53,6 +68,6 @@
             }
             );
         </script>
-
+        <script src="./assets/js/clients_function.js"></script>
     </body>
 </html>
